@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/main-map', function(req, res) {
-  res.render('public/components/MainMap/MainMap.html', { root: '.' });
+  res.sendFile('public/components/MainMap/MainMap.html', { root: '.' });
 });
 
 
